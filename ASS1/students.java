@@ -11,8 +11,6 @@ import java.util.Scanner;
 public class students
 {
     // instance variables - replace the example below with your own
-     
-    
 
         public static void main(String[] args){
             //String assigmentName;
@@ -90,10 +88,6 @@ public class students
     }
 }
     
-            
-            
-        
-        // initialise instance variables
        
     
 
