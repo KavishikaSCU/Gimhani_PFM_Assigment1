@@ -14,7 +14,8 @@ public class students
 
         public static void main(String[] args){
             //String assigmentName;
-            double[] marks = new double[30];
+            double[] marks = new double[4];
+            double[] validMarks = new double[4];
             
             Scanner input = new Scanner(System.in);
             System.out.println("Enter the your Assigment name: ");
@@ -25,8 +26,9 @@ public class students
                 Scanner marksInput = new Scanner(System.in);
                 marks[i] = marksInput.nextDouble();
                     if(marks[i] >=0 && marks[i] <= 30) {
-                                          
-                }
+                        
+                            validMarks[i] = marks[i];     
+                    }
                 
                 else{
                     System.out.println("Invalid mark. Please Enter mark between 0 and 30.");
@@ -37,7 +39,9 @@ public class students
             
             //Print the assigment Marks
              for (int i = 0; i < marks.length; i++) {
-            System.out.println("Student " + (i + 1) + ": " + marks[i]);
+            if(validMarks[i] != 0.00 ){
+                  System.out.println("Student " + (i + 1) + ": " + validMarks[i]);
+                 }
             }
             //Find Highest mark from the marks list
             double highestMark = marks[0];
