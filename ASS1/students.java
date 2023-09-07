@@ -21,19 +21,22 @@ public class students
             System.out.println("Enter the your Assigment name: ");
             String assigmentName = input.nextLine();   
             
-            for(int i=0;i < marks.length; i++) {  
+            for(int i=0;i < marks.length; i++) { 
+                //while(true){
                 System.out.println("Enter a valid mark : " );
                 Scanner marksInput = new Scanner(System.in);
                 marks[i] = marksInput.nextDouble();
                     if(marks[i] >=0 && marks[i] <= 30) {
                         
-                            validMarks[i] = marks[i];     
+                            validMarks[i] = marks[i]; 
+                            //return;
                     }
                 
                 else{
                     System.out.println("Invalid mark. Please Enter mark between 0 and 30.");
                 }
             }
+        //}
             //Print the assigment name
             System.out.println("\nAssignment: " +assigmentName);
             
@@ -67,7 +70,7 @@ public class students
         System.out.println("The Minimum Mark is : " +miniumMark);
         
         //Find Mean of marks from the marks list
-        double sum = 0;
+        double sum =0;
         double mean;
         
         for (double mark : marks){
