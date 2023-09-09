@@ -52,7 +52,7 @@ public class students
         double minimumMark = findMimumMark(assigmentMarks);
         double mean = findMean(assigmentMarks);
         double stanardDeviation = findStandardDeviation(assigmentMarks,mean);
-        
+          
         // Print results
         for (int i = 0; i < assigmentMarks.length; i++) {
             System.out.println("Student " + (i + 1) + ": " + assigmentMarks[i]);
