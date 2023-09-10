@@ -49,16 +49,20 @@ public class studentsMarks
     // Function no 1 to get valid marks from the user.
     public static double getValidMarks(Scanner input){
       while (true){
-           System.out.println("Please Enter a Valid marks between 0-30 : ");
-            double assigmentmark = input.nextDouble();
-               if(assigmentmark >=0 && assigmentmark <= 30){
-                    return assigmentmark;
-                }
-                else{
-                   System.out.println("Invalid mark. Please Enter mark between 0 and 30.");
-                }
-        }
+          try {
+               System.out.println("Please Enter a Valid marks between 0-30 : ");
+                double assigmentMark = input.nextDouble();
+                   if(assigmentMark >=0 && assigmentMark <= 30){
+                        return assigmentMark;
+                    }
+                    else{
+                       System.out.println("Invalid mark. Please Enter mark between 0 and 30.");
+                    }
+            } catch (NumberFormatException e){
+                 System.out.println("Invalid value, please enter a valid number");
+            }
    }
+}
     
     // Function no 2 to find maximum mark from the marks.
     public static double findHighestMark(double[]assigmentMarks){
