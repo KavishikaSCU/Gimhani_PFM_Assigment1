@@ -28,7 +28,7 @@ public class studentsMarks
             }
                 
         // Print the assigment name
-        System.out.println("\nAssignment: " +assigmentName);
+        System.out.println("\nAssignment Name: " +assigmentName);
         
         // Call functions created for statics calculations
         double highestMark = findHighestMark(assigmentMarks);
@@ -49,7 +49,6 @@ public class studentsMarks
     // Function no 1 to get valid marks from the user.
     public static double getValidMarks(Scanner input){
       while (true){
-          try {
                System.out.println("Please Enter a Valid marks between 0-30 : ");
                 double assigmentMark = input.nextDouble();
                    if(assigmentMark >=0 && assigmentMark <= 30){
@@ -58,12 +57,8 @@ public class studentsMarks
                     else{
                        System.out.println("Invalid mark. Please Enter mark between 0 and 30.");
                     }
-            } catch (NumberFormatException e){
-                 System.out.println("Invalid value, please enter a valid number");
             }
    }
-}
-    
     // Function no 2 to find maximum mark from the marks.
     public static double findHighestMark(double[]assigmentMarks){
         double highestMarks = assigmentMarks[0];
