@@ -1,3 +1,6 @@
+GITHUB Repositry Link : https://github.com/KavishikaSCU/Gimhani_PFM_Assigment1.git
+GitHub User Name :   KavishikaSCU/Gimhani_PFM_Assigment1
+
 // Pseudo code no 1
 
 // Print highest marks froms the marks list as follows:
